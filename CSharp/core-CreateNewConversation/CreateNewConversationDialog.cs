@@ -23,7 +23,7 @@
 
         public virtual async Task MessageReceivedAsync(IDialogContext context, IAwaitable<IMessageActivity> result)
         {
-            await context.PostAsync("You've been invited to a survey! It will start in a few seconds...");
+            await context.PostAsync("Welcome to Nss. Please help us understand ur issue by answering the questions");
 
             await this.surveyService.QueueSurveyAsync();
 
