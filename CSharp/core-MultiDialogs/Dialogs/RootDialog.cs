@@ -10,9 +10,9 @@
     [Serializable]
     public class RootDialog : IDialog<object>
     {
-        private const string FlightsOption = "Flights";
+        private const string FlightsOption = "Academy";
 
-        private const string HotelsOption = "Hotels";
+        private const string HotelsOption = "Corporate workspace";
 
         public async Task StartAsync(IDialogContext context)
         {
@@ -35,7 +35,7 @@
 
         private void ShowOptions(IDialogContext context)
         {
-            PromptDialog.Choice(context, this.OnOptionSelected, new List<string>() { FlightsOption, HotelsOption }, "Are you looking for a flight or a hotel?", "Not a valid option", 3);
+            PromptDialog.Choice(context, this.OnOptionSelected, new List<string>() { FlightsOption, HotelsOption }, "Is your issue concerned with Academy or Workspace?", "Not a valid option", 3);
         }
 
         private async Task OnOptionSelected(IDialogContext context, IAwaitable<string> result)
