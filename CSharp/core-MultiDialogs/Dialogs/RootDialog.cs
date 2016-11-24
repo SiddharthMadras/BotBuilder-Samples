@@ -68,6 +68,7 @@
                 switch (optionSelected)
                 {
                     case FlightsOption:
+                        ShowSecondOptions(context);
                         context.Call(new FlightsDialog(), this.ResumeAfterOptionDialog);
                         break;
 
