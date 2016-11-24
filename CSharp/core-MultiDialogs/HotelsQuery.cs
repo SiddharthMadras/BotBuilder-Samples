@@ -9,11 +9,11 @@
         [Prompt("Please enter your {&}")]
         public string Destination { get; set; }
         
-        [Prompt("When do you want to {&}?")]
+        [Prompt("We understand your concern. For how many days your facing this issue {&}?")]
         public DateTime CheckIn { get; set; }
 
         [Numeric(1, int.MaxValue)]
-        [Prompt("How many {&} do you want to stay?")]
+        [Prompt("How many {&} resources, you'll need?")]
         public int Nights { get; set; }
     }
 }
