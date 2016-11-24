@@ -14,7 +14,7 @@
     {
         public async Task StartAsync(IDialogContext context)
         {
-            await context.PostAsync("Welcome to the Hotels finder!");
+            await context.PostAsync("Please help us understand your corporate issue !");
 
             var hotelsFormDialog = FormDialog.FromForm(this.BuildHotelsForm, FormOptions.PromptInStart);
 
