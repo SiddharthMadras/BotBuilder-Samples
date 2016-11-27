@@ -51,7 +51,7 @@
 
         private void ShowOptions(IDialogContext context)
         {
-            PromptDialog.Choice(context, this.OnOptionSelected, new List<string>() { FlightsOption, HotelsOption }, "Is you're issue concerned with Academy or Workspace?", "Not a valid option", 3);
+            PromptDialog.Choice(context, this.OnOptionSelected, new List<string>() { FlightsOption, HotelsOption }, "Is your issue concerned with Academy or Workspace?", "Not a valid option", 3);
         }
         
         private void ShowSecondOptions(IDialogContext context)
